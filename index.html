@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS MINI GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div class="pages">
+                <h1 class="gradient-text">catch the cartoon</h1>
+                <button class="transition">
+                    <span class="text">Launch Game</span>
+                    <span class="shimmer"></span>
+                </button>
+
+                <div id="lottie">
+                    
+                    <dotlottie-player src="https://lottie.host/5349ea31-c89b-4fdd-8438-cc5cd20b35c5/kGbAVU9dyH.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                      </div>
+
+                <div id="lottie-2">
+                    
+                    <dotlottie-player src="https://lottie.host/5349ea31-c89b-4fdd-8438-cc5cd20b35c5/kGbAVU9dyH.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                </div>
+
+        </div>
+        <div class="pages">
+            <h2 class="gradient-text">Choose a character</h2>
+            <div id="content">
+                <div class="character"> <img src="./tom.png" alt=""> </div>
+                <div class="character"> <img src="./jerry.png" alt=""></div>
+                <div class="character"> <img src="./dog.png" alt=""></div>
+                <div class="character"> <img src="./blackcat.png" alt=""></div>
+            </div>
+        </div>
+        <div class="pages">
+            <div id="score">
+                <div id="info">
+                    <div id="elem1"><h2 id="timer-id">time : 15 </h2></div>
+                    <div id="elem2"> <button class="gamebtn">Start   
+                        <span class="shimmer"></span>
+                    </button></div>
+                    <div id="elem3"><h2 id="timer-2">score : 0</h2></div>
+                </div>
+                
+                <div id="random-game">
+
+                </div>
+                <div id="floating-div">
+                        <div class="headline">
+                            <h4>Game Over</h4>
+                        </div>
+
+                        <div class="scorecard">
+                            <h5 class="score-current"> Your score is :</h5>
+                            <h5> Total time took : 15 sec</h5>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
